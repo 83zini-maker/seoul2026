@@ -31,6 +31,7 @@
 .eventTemplate .et_eventWrap {
   display: flex;
   gap: 120px;
+  margin-top:180px;
 }
 
 
@@ -286,6 +287,17 @@
    .eventTemplate .et_productWrap {
     grid-template-columns: repeat(2, 1fr);
   }
+  .eventTemplate .et_productWrap .et_product .et_product_content {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 1;
+}
+.eventTemplate .et_productWrap .et_product .et_product_list {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
 }
 @media (max-width: 768px) {
 
@@ -315,16 +327,29 @@
 
   /* 상품 카드 */
   .eventTemplate .et_productWrap .et_product .et_product_content strong {
-    font-size: 32px;
+    font-size: 19px;
   }
 
   .eventTemplate .et_productWrap .et_product .et_product_list span {
-    font-size: 16px;
+    font-size: 9px;
   }
 
   .eventTemplate .et_productWrap .et_product button {
-    font-size: 14px;
+    font-size: 13px;
   }
+
+
+  .eventTemplate .et_productWrap .et_product button {
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  padding: 6px 12px;
+  background: var(--et-color-black);
+  position: absolute;
+  z-index:4;
+  bottom: 16px;
+  right: 16px;
+}
 
   /* 유의사항 */
   .eventTemplate .et_notice strong {
